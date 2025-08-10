@@ -33,7 +33,7 @@ def search_movie(file_path):
     try:
         search_type_input = int(input("\nMake your selection (1-4): ").strip())
     except ValueError:
-        print("Invalid input. Please choose a number.\n")
+        print("Invalid input. Please choose a number.")
         return search_movie(file_path)
     match search_type_input:
         case 1:
@@ -50,6 +50,7 @@ def search_movie(file_path):
             return search_movie(file_path)
     search_term = input("Please enter your search term: ").strip()
     search_results = search_movies(json_data, search_type, search_term)
+    search_results = sorted(search_results, key = lambda x: (x.release_year, x.title))
     if len(search_results) == 0:
         print("No movies were found. Restarting search.\n")
         return search_movie(file_path)
