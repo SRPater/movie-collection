@@ -1,6 +1,7 @@
 import json
 from enum import Enum
 
+from json_manager import json_to_movies
 from movie import Movie
 
 
@@ -108,18 +109,3 @@ def search_movies(json, search_type, search_term):
                     if search_term.lower() in member.lower():
                         results.append(movie)
     return results
-
-
-def json_to_movies(json):
-    movies = []
-    for movie in json["movies"]:
-        new_movie = Movie(
-            movie["title"],
-            movie["release_year"],
-            movie["director"],
-            movie["cast"],
-            movie["summary"],
-            movie["id"],
-        )
-        movies.append(new_movie)
-    return movies

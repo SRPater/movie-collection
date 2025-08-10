@@ -1,15 +1,17 @@
 from datetime import datetime
 import json
 
-from movie import Movie
+from json_manager import json_to_movies
+from movie import Movie, movie_to_dictionary
 
 
 def add_movie(file_path):
     try:
         with open(file_path, "r") as file:
-            collection = json.load(file)
+            json_data = json.load(file)
     except json.JSONDecodeError:
-        collection = {"movies": []}
+        json_data = {"movies": []}
+    existing_movies = json_to_movies(json_data)
     print("\nWe need to know some information about a movie before we can add it to the collection.")
     title = input("What is the title of the movie? ").strip()
     if title == "":
@@ -18,10 +20,10 @@ def add_movie(file_path):
     if len(title) > 100:
         print("A title can be no longer than 100 characters.")
         return add_movie(file_path)
-    for movie in collection:
-        if movie.title.lower() == title:
+    for movie in existing_movies:
+        if movie.title.lower() == title.lower():
             print("A movie with that title already exists in your collection.")
-        return add_movie(file_path)
+            return add_movie(file_path)
     try:
         release_year = int(input("In what year was the movie released? ").strip())
     except ValueError:
@@ -36,7 +38,7 @@ def add_movie(file_path):
     summary = input("Give a short summary of the movie. ").strip()
     new_movie = Movie(title, release_year, director, cast, summary)
     movie_dict = movie_to_dictionary(new_movie)
-    movies = collection["movies"]
+    movies = json_data["movies"]
     movies.append(movie_dict)
     try:
         with open(file_path, "w") as json_file:
@@ -54,14 +56,3 @@ def add_movie(file_path):
         print("Returning to main menu.\n")
     else:
         print("Invalid input. Returning to main menu.\n")
-
-
-def movie_to_dictionary(movie):
-    return {
-        "id": movie.id,
-        "title": movie.title,
-        "release_year": movie.release_year,
-        "director": movie.director,
-        "cast": movie.cast,
-        "summary": movie.summary,
-    }

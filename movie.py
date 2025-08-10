@@ -38,6 +38,17 @@ class Movie:
         print ("└" + "─" * (max_length + 2) + "┘")
 
 
+def movie_to_dictionary(movie):
+    return {
+        "id": movie.id,
+        "title": movie.title,
+        "release_year": movie.release_year,
+        "director": movie.director,
+        "cast": movie.cast,
+        "summary": movie.summary,
+    }
+
+
 def wrap_summary(summary, max_length):
     summary_lines = []
     if len(summary) <= max_length:
