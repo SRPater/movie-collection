@@ -12,7 +12,12 @@ class SearchType(Enum):
 
 def search_movie(file_path):
     with open(file_path, "r") as json_file:
-        json_data = json.load(json_file)
+        try:
+            json_data = json.load(json_file)
+        except json.JSONDecodeError:
+            json_data = {}
+            with open(file_path, "w") as write_file:
+                json.dump(json_data, write_file)
     if json_data == {} or len(json_data["movies"]) == 0:
         print("There are no movies in your collection. Returning to the main menu.\n")
         return
