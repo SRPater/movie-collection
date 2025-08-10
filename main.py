@@ -1,6 +1,7 @@
 import os
 import sys
 
+from add_movie import add_movie
 from search_movie import search_movie
 
 
@@ -28,10 +29,9 @@ def main():
         
         match main_menu_choice:
             case 1:
-                print("Starting movie search.\n")
                 search_movie(FILE_PATH)
             case 2:
-                print("You've chosen to add a new movie.\n")
+                add_movie(FILE_PATH)
             case 3:
                 print("You've chosen to edit a movie.\n")
             case 4:

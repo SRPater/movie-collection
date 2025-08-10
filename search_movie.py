@@ -21,7 +21,7 @@ def search_movie(file_path):
     if json_data == {} or len(json_data["movies"]) == 0:
         print("There are no movies in your collection. Returning to the main menu.\n")
         return
-    print("┌────────────────────────────────────┐")
+    print("\n┌────────────────────────────────────┐")
     print("│      - = - Movie Search - = -      │")
     print("│ What would you like to search for? │")
     print("╞════════════════════════════════════╡")
@@ -79,13 +79,12 @@ def search_movie(file_path):
     elif movie_choice_input == len(search_results) + 1:
         print("Restarting search.\n")
         return search_movie(file_path)
-    
     chosen_movie = search_results[movie_choice_input - 1]
     chosen_movie.print()
     new_search_input = input("\nWould you like to start a new search (Y/N)? ")
     if new_search_input.lower() == "y" or new_search_input.lower() == "yes":
         print("Starting new search.\n")
-        search_movie(file_path)
+        return search_movie(file_path)
     elif new_search_input.lower() == "n" or new_search_input.lower() == "no":
         print("Returning to main menu.\n")
     else:
@@ -109,15 +108,6 @@ def search_movies(json, search_type, search_term):
                     if search_term.lower() in member.lower():
                         results.append(movie)
     return results
-    
-    # To do
-    # 2. Write match statement to search for either title, director or cast members
-    # 3. Style search results in neat little box
-    # 4. Print neat little box with search results
-    # 5. Ask which movie to show
-    # 6. Show chosen movie or restart search
-    # 7. Ask if they want new search
-    # 8. Yes -> restart search, No -> return to main menu
 
 
 def json_to_movies(json):
