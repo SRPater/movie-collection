@@ -70,7 +70,7 @@ def search_movie(file_path):
         i += 1
     print("└" + "─" * (max_length + 2) + "┘")
     try:
-        movie_choice_input = int(input(f"\nWhich movie do you want to view? 1 - {len(search_results)} to choose or {len(search_results) + 1} to restart the search. "))
+        movie_choice_input = int(input(f"\nWhich movie do you want to view? 1 - {len(search_results)} to choose or {len(search_results) + 1} to restart the search. ").strip())
     except ValueError:
         print("Incorrect input. Please choose a number the next time. Restarting search.\n")
         return search_movie(file_path)
@@ -82,7 +82,7 @@ def search_movie(file_path):
         return search_movie(file_path)
     chosen_movie = search_results[movie_choice_input - 1]
     chosen_movie.print()
-    new_search_input = input("\nWould you like to start a new search (Y/N)? ")
+    new_search_input = input("\nWould you like to start a new search (Y/N)? ").strip()
     if new_search_input.lower() == "y" or new_search_input.lower() == "yes":
         print("Starting new search.\n")
         return search_movie(file_path)
@@ -95,7 +95,6 @@ def search_movie(file_path):
 def search_movies(json, search_type, search_term):
     movies = json_to_movies(json)
     results = []
-    
     for movie in movies:
         match search_type:
             case SearchType.TITLE:
