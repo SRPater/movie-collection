@@ -1,0 +1,38 @@
+{
+    "movies": [
+        {
+            "id": "15d2e22707c34cba9d6863f574b220a8",
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "release_year": 2001,
+            "director": "Peter Jackson",
+            "cast": [
+                "Elijah Wood",
+                "Ian McKellen",
+                "Orlando Bloom",
+                "Sean Bean",
+                "Sean Astin",
+                "Andy Serkis",
+                "Viggo Mortensen",
+                "Cate Blanchett",
+                "Christopher Lee"
+            ],
+            "summary": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
+        },
+        {
+            "id": "19dcf2412e3f46b7a4e9de78e050584d",
+            "title": "The Lord of the Rings: The Two Towers",
+            "release_year": 2002,
+            "director": "Peter Jackson",
+            "cast": [
+                "Elijah Wood",
+                "Ian McKellen",
+                "Viggo Mortensen",
+                "Orlando Bloom",
+                "Sean Astin",
+                "Cate Blanchett",
+                "Christopher Lee"
+            ],
+            "summary": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard."
+        }
+    ]
+}
