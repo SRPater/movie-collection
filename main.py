@@ -5,27 +5,33 @@ from add_movie import add_movie
 from search_movie import search_movie
 
 
-BASE_DIR = os.getcwd()
+BASE_DIR = os.path.dirname(__file__)
 FILE_PATH = os.path.join(BASE_DIR, "collection/movies.json")
+MENU = """┌──────────────────────────────┐
+│ - = - Movie Collection - = - │
+│  What would you like to do?  │
+╞══════════════════════════════╡
+│ 1. Search for a movie        │
+│ 2. Add a new movie           │
+│ 3. Edit a movie              │
+│ 4. Delete a movie            │
+│ 5. Exit the Movie Collection │
+└──────────────────────────────┘
+"""
+
+
+def print_menu():
+    print(MENU)
 
 
 def main():
     while True:
-        print("┌──────────────────────────────┐")
-        print("│ - = - Movie Collection - = - │")
-        print("│  What would you like to do?  │")
-        print("╞══════════════════════════════╡")
-        print("│ 1. Search for a movie        │")
-        print("│ 2. Add a new movie           │")
-        print("│ 3. Edit a movie              │")
-        print("│ 4. Delete a movie            │")
-        print("│ 5. Exit the Movie Collection │")
-        print("└──────────────────────────────┘")
-        
+        print_menu()
         try:
-            main_menu_choice = int(input("\nMake your selection please (1-5): ").strip())
+            main_menu_choice = int(input("Make your selection please (1-5): ").strip())
         except ValueError:
             print("Invalid choice. Please choose a number.\n")
+            continue
         
         match main_menu_choice:
             case 1:
