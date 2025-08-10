@@ -12,6 +12,7 @@ A handy CLI tool to keep track of a movie collection. I wrote this as my first p
 ```
 ├─ collection/
 │  └─ movies.json   - Movie collection file
+├─ add_movie.py     - Add movie functionality
 ├─ main.py          - Main application file
 ├─ movie.py         - Movie class and formatter for showing movies
 ├─ README.md        - Documentation
