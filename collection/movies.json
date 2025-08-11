@@ -125,6 +125,35 @@
                 "Monica Bellucci"
             ],
             "summary": "Freedom fighters Neo, Trinity and Morpheus continue to lead the revolt against the Machine Army, unleashing their arsenal of extraordinary skills and weaponry against the systematic forces of repression and exploitation."
+        },
+        {
+            "id": "91bc0bf780184fc880209ea3e716b7a8",
+            "title": "The Matrix Revolutions",
+            "release_year": 2003,
+            "director": "Lana Wachowski, Lilly Wachowski",
+            "cast": [
+                "Keanu Reeves",
+                "Laurence Fishburne",
+                "Carrie-Anne Moss",
+                "Hugo Weaving",
+                "Monica Bellucci"
+            ],
+            "summary": "The human city of Zion defends itself against the massive invasion of the machines as Neo fights to end the war at another front while also opposing the rogue Agent Smith."
+        },
+        {
+            "id": "b06296ab194e4513820ee37f3210cfe3",
+            "title": "The Matrix Resurrections",
+            "release_year": 2021,
+            "director": "Lana Wachowski",
+            "cast": [
+                "Keanu Reeves",
+                "Carrie-Anne Moss",
+                "Neil Patrick Harris",
+                "Jada Pinkett Smith",
+                "Priyanka Chopra Jonas",
+                "Christina Ricci"
+            ],
+            "summary": "Return to a world of two realities: one, everyday life; the other, what lies behind it. To find out if his reality is a construct, to truly know himself, Mr. Anderson will have to choose to follow the white rabbit once more."
         }
     ]
 }

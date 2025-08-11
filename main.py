@@ -3,6 +3,7 @@ import sys
 from typing import NoReturn
 
 from add_movie import add_movie
+from edit_movie import edit_movie
 from search_movie import search_movie
 
 
@@ -40,7 +41,7 @@ def main() -> NoReturn:
             case 2:
                 add_movie(FILE_PATH)
             case 3:
-                print("You've chosen to edit a movie.\n")
+                edit_movie(FILE_PATH)
             case 4:
                 print("You've chosen to delete a movie.\n")
             case 5:
