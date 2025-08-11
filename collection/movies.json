@@ -1,1 +1,130 @@
-{"movies": [{"id": "15d2e22707c34cba9d6863f574b220a8", "title": "The Lord of the Rings: The Fellowship of the Ring", "release_year": 2001, "director": "Peter Jackson", "cast": ["Elijah Wood", "Ian McKellen", "Orlando Bloom", "Sean Bean", "Sean Astin", "Andy Serkis", "Viggo Mortensen", "Cate Blanchett", "Christopher Lee"], "summary": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."}, {"id": "19dcf2412e3f46b7a4e9de78e050584d", "title": "The Lord of the Rings: The Two Towers", "release_year": 2002, "director": "Peter Jackson", "cast": ["Elijah Wood", "Ian McKellen", "Viggo Mortensen", "Orlando Bloom", "Sean Astin", "Cate Blanchett", "Christopher Lee"], "summary": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard."}, {"id": "012a28ee8c7a43419ae6c8ceb7666fc6", "title": "Lord of the Rings: The Return of the King", "release_year": 2003, "director": "Peter Jackson", "cast": ["Elijah Wood", "Viggo Mortensen", "Ian McKellen", "Orlando Bloom", "Sean Astin", "Sean Bean", "Cate Blanchett"], "summary": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."}, {"id": "5b3e1c58805a4e9eb0a069981884926c", "title": "The Hobbit: An Unexpected Journey", "release_year": 2012, "director": "Peter Jackson", "cast": ["Martin Freeman", "Ian McKellen", "Andy Serkis", "Graham McTavish", "James Nesbitt", "Aidan Turner", "Elijah Wood"], "summary": "A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home and the gold within it from the dragon Smaug."}, {"id": "616b4b267a0f4d1898b3be3db647486f", "title": "The Hobbit: The Desolation of Smaug", "release_year": 2013, "director": "Peter Jackson", "cast": ["Ian McKellen", "Martin Freeman", "Graham McTavish", "James Nesbitt", "Aidan Turner", "Orlando Bloom", "Evangeline Lilly"], "summary": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim the Lonely Mountain, their homeland, from the dragon Smaug."}, {"id": "616b4b267a0f4d1898b3be3db647486f", "title": "The Hobbit: The Battle of the Five Armies", "release_year": 2014, "director": "Peter Jackson", "cast": ["Ian McKellen", "Martin Freeman", "Cate Blanchett", "Graham McTavish", "James Nesbitt", "Aidan Turner", "Orlando Bloom", "Evangeline Lilly"], "summary": "Bilbo Baggins and company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness."}]}
+{
+    "movies": [
+        {
+            "id": "15d2e22707c34cba9d6863f574b220a8",
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "release_year": 2001,
+            "director": "Peter Jackson",
+            "cast": [
+                "Elijah Wood",
+                "Ian McKellen",
+                "Orlando Bloom",
+                "Sean Bean",
+                "Sean Astin",
+                "Andy Serkis",
+                "Viggo Mortensen",
+                "Cate Blanchett",
+                "Christopher Lee"
+            ],
+            "summary": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
+        },
+        {
+            "id": "19dcf2412e3f46b7a4e9de78e050584d",
+            "title": "The Lord of the Rings: The Two Towers",
+            "release_year": 2002,
+            "director": "Peter Jackson",
+            "cast": [
+                "Elijah Wood",
+                "Ian McKellen",
+                "Viggo Mortensen",
+                "Orlando Bloom",
+                "Sean Astin",
+                "Cate Blanchett",
+                "Christopher Lee"
+            ],
+            "summary": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard."
+        },
+        {
+            "id": "012a28ee8c7a43419ae6c8ceb7666fc6",
+            "title": "Lord of the Rings: The Return of the King",
+            "release_year": 2003,
+            "director": "Peter Jackson",
+            "cast": [
+                "Elijah Wood",
+                "Viggo Mortensen",
+                "Ian McKellen",
+                "Orlando Bloom",
+                "Sean Astin",
+                "Sean Bean",
+                "Cate Blanchett"
+            ],
+            "summary": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
+        },
+        {
+            "id": "5b3e1c58805a4e9eb0a069981884926c",
+            "title": "The Hobbit: An Unexpected Journey",
+            "release_year": 2012,
+            "director": "Peter Jackson",
+            "cast": [
+                "Martin Freeman",
+                "Ian McKellen",
+                "Andy Serkis",
+                "Graham McTavish",
+                "James Nesbitt",
+                "Aidan Turner",
+                "Elijah Wood"
+            ],
+            "summary": "A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home and the gold within it from the dragon Smaug."
+        },
+        {
+            "id": "616b4b267a0f4d1898b3be3db647486f",
+            "title": "The Hobbit: The Desolation of Smaug",
+            "release_year": 2013,
+            "director": "Peter Jackson",
+            "cast": [
+                "Ian McKellen",
+                "Martin Freeman",
+                "Graham McTavish",
+                "James Nesbitt",
+                "Aidan Turner",
+                "Orlando Bloom",
+                "Evangeline Lilly"
+            ],
+            "summary": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim the Lonely Mountain, their homeland, from the dragon Smaug."
+        },
+        {
+            "id": "616b4b267a0f4d1898b3be3db647486f",
+            "title": "The Hobbit: The Battle of the Five Armies",
+            "release_year": 2014,
+            "director": "Peter Jackson",
+            "cast": [
+                "Ian McKellen",
+                "Martin Freeman",
+                "Cate Blanchett",
+                "Graham McTavish",
+                "James Nesbitt",
+                "Aidan Turner",
+                "Orlando Bloom",
+                "Evangeline Lilly"
+            ],
+            "summary": "Bilbo Baggins and company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness."
+        },
+        {
+            "id": "d60267ae591d464c95f8b0795d3b131e",
+            "title": "The Matrix",
+            "release_year": 1999,
+            "director": "Lana Wachowski, Lilly Wachowski",
+            "cast": [
+                "Keanu Reeves",
+                "Laurence Fishburne",
+                "Carrie-Anne Moss",
+                "Hugo Weaving"
+            ],
+            "summary": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth - the life he knows is the elaborate deception of an evil cyber-intelligence."
+        },
+        {
+            "id": "ea626539eeda444c8e75ab66fd38b401",
+            "title": "The Matrix Reloaded",
+            "release_year": 2003,
+            "director": "Lana Wachowski, Lilly Wachowski",
+            "cast": [
+                "Keanu Reeves",
+                "Laurence Fishburne",
+                "Carrie-Anne Moss",
+                "Hugo Weaving",
+                "Monica Bellucci"
+            ],
+            "summary": "Freedom fighters Neo, Trinity and Morpheus continue to lead the revolt against the Machine Army, unleashing their arsenal of extraordinary skills and weaponry against the systematic forces of repression and exploitation."
+        }
+    ]
+}

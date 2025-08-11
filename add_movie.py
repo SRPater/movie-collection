@@ -1,58 +1,56 @@
 from datetime import datetime
-import json
+from typing import List
 
-from json_manager import json_to_movies
-from movie import Movie, movie_to_dictionary
+from json_manager import load_movies, save_movies
+from movie import Movie
 
 
-def add_movie(file_path):
-    try:
-        with open(file_path, "r") as file:
-            json_data = json.load(file)
-    except json.JSONDecodeError:
-        json_data = {"movies": []}
-    existing_movies = json_to_movies(json_data)
-    print("\nWe need to know some information about a movie before we can add it to the collection.")
-    title = input("What is the title of the movie? ").strip()
-    if title == "":
-        print("Please enter a title.")
-        return add_movie(file_path)
-    if len(title) > 100:
-        print("A title can be no longer than 100 characters.")
-        return add_movie(file_path)
-    for movie in existing_movies:
-        if movie.title.lower() == title.lower():
+def get_valid_title(existing_movies: List[Movie]) -> str:
+    while True:
+        title = input("What is the title of the movie? ").strip()
+        if not title:
+            print("Please enter a title.")
+        elif len(title) > 100:
+            print("A title can not be longer than 100 characters.")
+        elif any(m.title.lower() == title.lower() for m in existing_movies):
             print("A movie with that title already exists in your collection.")
-            return add_movie(file_path)
-    try:
-        release_year = int(input("In what year was the movie released? ").strip())
-    except ValueError:
-        print("Please enter a number.")
-        return add_movie(file_path)
-    if release_year < 1900 or release_year > datetime.now().year:
-        print(f"The release year must be between 1900 and {datetime.now().year}.")
-        return add_movie(file_path)
+        else:
+            return title
+
+
+def get_valid_release_year() -> int:
+    current_year = datetime.now().year
+    while True:
+        try:
+            year = int(input("In what year was the movie released? ").strip())
+        except ValueError:
+            print("Please enter a number.")
+        if 1900 <= year <= current_year:
+            return year
+        print(f"The release year must be between 1900 and {current_year}.")
+
+
+def add_movie(file_path: str) -> None:
+    existing_movies = load_movies(file_path)
+    print("\nWe need to know some information about a movie before we can add it to the collection.")
+    title = get_valid_title(existing_movies)
+    release_year = get_valid_release_year()
     director = input("Who directed the movie? ").strip()
-    cast_members = input("Who starred in this movie? Separate cast members with a comma. ").strip()
-    cast = cast_members.split(",")
+    cast_input = input("Who starred in this movie? Separate cast members with a comma. ").strip()
+    cast = [member.strip() for member in cast_input.split(",") if member.strip()]
     summary = input("Give a short summary of the movie. ").strip()
     new_movie = Movie(title, release_year, director, cast, summary)
-    movie_dict = movie_to_dictionary(new_movie)
-    movies = json_data["movies"]
-    movies.append(movie_dict)
+    existing_movies.append(new_movie)
     try:
-        with open(file_path, "w") as json_file:
-            json.dump({"movies": movies}, json_file)
+        save_movies(file_path, existing_movies)
     except Exception:
-        print("\nSomething went wrong. Please try again.")
-        return add_movie(file_path)
-    print(f"Successfully added {new_movie.title} to the collection.")
+        print("\nSomething went wrong while saving. Please try again.")
+        return
+    print(f"Succesfully added {new_movie.title} to the collection.")
     new_movie.print()
-    add_more_input = input("\nWould you like to add another movie (Y/N)? ").strip()
-    if add_more_input.lower() == "y" or add_more_input.lower() == "yes":
+    add_more_input = input("\nWould you like to add another movie (Y/N)? ").strip().lower()
+    if add_more_input in ("y", "yes"):
         print("Alright, let's add another one.\n")
-        return add_movie(file_path)
-    elif add_more_input.lower() == "n" or add_more_input.lower() == "no":
-        print("Returning to main menu.\n")
+        add_movie(file_path)
     else:
-        print("Invalid input. Returning to main menu.\n")
+        print("Returning to the main menu.\n")

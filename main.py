@@ -1,13 +1,14 @@
 import os
 import sys
+from typing import NoReturn
 
 from add_movie import add_movie
 from search_movie import search_movie
 
 
-BASE_DIR = os.path.dirname(__file__)
-FILE_PATH = os.path.join(BASE_DIR, "collection/movies.json")
-MENU = """┌──────────────────────────────┐
+BASE_DIR: str = os.path.dirname(__file__)
+FILE_PATH: str = os.path.join(BASE_DIR, "collection/movies.json")
+MENU: str = """┌──────────────────────────────┐
 │ - = - Movie Collection - = - │
 │  What would you like to do?  │
 ╞══════════════════════════════╡
@@ -20,11 +21,11 @@ MENU = """┌──────────────────────�
 """
 
 
-def print_menu():
+def print_menu() -> None:
     print(MENU)
 
 
-def main():
+def main() -> NoReturn:
     while True:
         print_menu()
         try:
