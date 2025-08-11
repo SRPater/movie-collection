@@ -1,8 +1,8 @@
 from datetime import datetime
 from typing import List
 
-from json_manager import load_movies, save_movies
-from movie import Movie
+from core.json_manager import load_movies, save_movies
+from core.movie import Movie
 
 
 def get_valid_title(existing_movies: List[Movie]) -> str:

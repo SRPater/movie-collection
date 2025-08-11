@@ -2,13 +2,13 @@ import os
 import sys
 from typing import NoReturn
 
-from add_movie import add_movie
-from edit_movie import edit_movie
-from search_movie import search_movie
+from features.add_movie import add_movie
+from features.edit_movie import edit_movie
+from features.search_movie import search_movie
 
 
-BASE_DIR: str = os.path.dirname(__file__)
-FILE_PATH: str = os.path.join(BASE_DIR, "collection/movies.json")
+BASE_DIR: str = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FILE_PATH: str = os.path.join(BASE_DIR, "collection", "movies.json")
 MENU: str = """┌──────────────────────────────┐
 │ - = - Movie Collection - = - │
 │  What would you like to do?  │

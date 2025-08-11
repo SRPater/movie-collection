@@ -1,7 +1,7 @@
 from enum import Enum
 from typing import List, Optional, Union
 
-from movie import Movie
+from core.movie import Movie
 
 
 class SearchType(Enum):

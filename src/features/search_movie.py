@@ -1,8 +1,8 @@
 from typing import Optional
 
-from json_manager import load_movies
-from movie import Movie
-from search_manager import (
+from core.json_manager import load_movies
+from core.movie import Movie
+from core.search_manager import (
     SearchType,
     prompt_search_type,
     search_movies,

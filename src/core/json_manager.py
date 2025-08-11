@@ -1,7 +1,7 @@
 import json
 from typing import List
 
-from movie import Movie, movie_to_dictionary
+from core.movie import Movie, movie_to_dictionary
 
 
 def json_to_movies(json_data: dict) -> List[Movie]:
