@@ -1,46 +1,15 @@
 from datetime import datetime
 from typing import List
 
+from core.input_manager import (
+    get_valid_title,
+    get_valid_release_year,
+    get_director,
+    get_cast,
+    get_summary
+)
 from core.json_manager import load_movies, save_movies
 from core.movie import Movie
-
-
-def get_valid_title(existing_movies: List[Movie]) -> str:
-    while True:
-        title = input("What is the title of the movie? ").strip()
-        if not title:
-            print("Please enter a title.")
-        elif len(title) > 100:
-            print("A title can not be longer than 100 characters.")
-        elif any(m.title.lower() == title.lower() for m in existing_movies):
-            print("A movie with that title already exists in your collection.")
-        else:
-            return title
-
-
-def get_valid_release_year() -> int:
-    current_year = datetime.now().year
-    while True:
-        try:
-            year = int(input("In what year was the movie released? ").strip())
-        except ValueError:
-            print("Please enter a number.")
-        if 1900 <= year <= current_year:
-            return year
-        print(f"The release year must be between 1900 and {current_year}.")
-
-
-def get_director() -> str:
-    return input("Who directed the movie? ").strip()
-
-
-def get_cast() -> List[str]:
-    cast_input = input("Who starred in the movie? Separate cast movies with a comma. ").strip()
-    return [member.strip() for member in cast_input.split(",") if member.strip()]
-
-
-def get_summary() -> str:
-    return input("Give a short summary of the movie. ").strip()
 
 
 def add_movie(file_path: str) -> None:

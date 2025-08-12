@@ -1,24 +1,6 @@
 {
     "movies": [
         {
-            "id": "15d2e22707c34cba9d6863f574b220a8",
-            "title": "The Lord of the Rings: The Fellowship of the Ring",
-            "release_year": 2001,
-            "director": "Peter Jackson",
-            "cast": [
-                "Elijah Wood",
-                "Ian McKellen",
-                "Orlando Bloom",
-                "Sean Bean",
-                "Sean Astin",
-                "Andy Serkis",
-                "Viggo Mortensen",
-                "Cate Blanchett",
-                "Christopher Lee"
-            ],
-            "summary": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
-        },
-        {
             "id": "19dcf2412e3f46b7a4e9de78e050584d",
             "title": "The Lord of the Rings: The Two Towers",
             "release_year": 2002,
@@ -33,22 +15,6 @@
                 "Christopher Lee"
             ],
             "summary": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard."
-        },
-        {
-            "id": "012a28ee8c7a43419ae6c8ceb7666fc6",
-            "title": "Lord of the Rings: The Return of the King",
-            "release_year": 2003,
-            "director": "Peter Jackson",
-            "cast": [
-                "Elijah Wood",
-                "Viggo Mortensen",
-                "Ian McKellen",
-                "Orlando Bloom",
-                "Sean Astin",
-                "Sean Bean",
-                "Cate Blanchett"
-            ],
-            "summary": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
         },
         {
             "id": "5b3e1c58805a4e9eb0a069981884926c",
@@ -154,6 +120,56 @@
                 "Christina Ricci"
             ],
             "summary": "Return to a world of two realities: one, everyday life; the other, what lies behind it. To find out if his reality is a construct, to truly know himself, Mr. Anderson will have to choose to follow the white rabbit once more."
+        },
+        {
+            "id": "15d2e22707c34cba9d6863f574b220a8",
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "release_year": 2001,
+            "director": "Peter Jackson",
+            "cast": [
+                "Elijah Wood",
+                "Ian McKellen",
+                "Orlando Bloom",
+                "Sean Bean",
+                "Sean Astin",
+                "Andy Serkis",
+                "Viggo Mortensen",
+                "Cate Blanchett",
+                "Christopher Lee"
+            ],
+            "summary": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
+        },
+        {
+            "id": "012a28ee8c7a43419ae6c8ceb7666fc6",
+            "title": "The Lord of the Rings: The Return of the King",
+            "release_year": 2003,
+            "director": "Peter Jackson",
+            "cast": [
+                "Elijah Wood",
+                "Viggo Mortensen",
+                "Ian McKellen",
+                "Orlando Bloom",
+                "Sean Astin",
+                "Sean Bean",
+                "Cate Blanchett"
+            ],
+            "summary": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
+        },
+        {
+            "id": "584cd720b5244d9fbc71f604060ef552",
+            "title": "Harry Potter and the Philosopher's Stone",
+            "release_year": 2001,
+            "director": "Chris Columbus",
+            "cast": [
+                "Daniel Radcliffe",
+                "Rupert Grint",
+                "Emma Watson",
+                "Maggie Smith",
+                "Robbie Coltrane",
+                "Warwick Davis",
+                "Verne Troyer"
+            ],
+            "summary": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world."
         }
     ]
 }

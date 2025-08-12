@@ -3,6 +3,7 @@ import sys
 from typing import NoReturn
 
 from features.add_movie import add_movie
+from features.delete_movie import delete_movie
 from features.edit_movie import edit_movie
 from features.search_movie import search_movie
 
@@ -43,7 +44,7 @@ def main() -> NoReturn:
             case 3:
                 edit_movie(FILE_PATH)
             case 4:
-                print("You've chosen to delete a movie.\n")
+                delete_movie(FILE_PATH)
             case 5:
                 print("Exiting the Movie Collection. See you next time!\n")
                 sys.exit(0)
