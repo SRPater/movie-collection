@@ -170,6 +170,130 @@
                 "Verne Troyer"
             ],
             "summary": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world."
+        },
+        {
+            "id": "71297d023bbb4682a1553c8d5a4df2d8",
+            "title": "Harry Potter and the Chamber of Secrets",
+            "release_year": 2002,
+            "director": "Chris Columbus",
+            "cast": [
+                "Daniel Radcliffe",
+                "Rupert Grint",
+                "Emma Watson",
+                "James Phelps",
+                "Oliver Phelps",
+                "Bonnie Wright",
+                "Tom Felton",
+                "Jason Isaacs"
+            ],
+            "summary": "Harry Potter lives his second year at Hogwarts with Ron and Hermione when a message on the wall announces that the legendary Chamber of Secrets has been opened. The trio soon realize that, to save the school, it will take a lot of courage."
+        },
+        {
+            "id": "cfa43f3192754facbc6ecaa0814eb133",
+            "title": "Harry Potter and the Prisoner of Azkaban",
+            "release_year": 2004,
+            "director": "Alfonso Cuar\u00f3n",
+            "cast": [
+                "Daniel Radcliffe",
+                "Emma Watson",
+                "Rupert Grint",
+                "Gary Oldman",
+                "Oliver Phelps",
+                "James Phelps"
+            ],
+            "summary": "Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard."
+        },
+        {
+            "id": "46526c7383164ab1a49da670fbad8524",
+            "title": "Harry Potter and the Goblet of Fire",
+            "release_year": 2005,
+            "director": "Mike Newell",
+            "cast": [
+                "Daniel Radcliffe",
+                "Emma Watson",
+                "Rupert Grint",
+                "David Tennant",
+                "James Phelps",
+                "Oliver Phelps",
+                "Bonnie Wright",
+                "Robert Pattinson",
+                "Jason Isaacs",
+                "Tom Felton"
+            ],
+            "summary": "Harry Potter finds himself competing in a hazardous tournament between rival schools of magic, but he is distracted by recurring nightmares."
+        },
+        {
+            "id": "75829f8c13df48778da8d7a5d166a3a0",
+            "title": "Harry Potter and the Order of the Phoenix",
+            "release_year": 2007,
+            "director": "David Yates",
+            "cast": [
+                "Daniel Radcliffe",
+                "Emma Watson",
+                "Rupert Grint",
+                "Brendan Gleeson",
+                "Ralph Fiennes"
+            ],
+            "summary": "With their warning about Lord Voldemort's return scoffed at, Harry and Dumbledore are targeted by the Wizard authorities as an authoritarian bureaucrat slowly seizes power at Hogwarts."
+        },
+        {
+            "id": "63731717e2ba4ea7b3ca3ba4a4b35bd7",
+            "title": "Harry Potter and the Half-Blood Prince",
+            "release_year": 2009,
+            "director": "David Yates",
+            "cast": [
+                "Daniel Radcliffe",
+                "Emma Watson",
+                "Rupert Grint",
+                "Michael Gambon",
+                "Bonnie Wright",
+                "Helena Bonham Carter",
+                "Helen McCrory",
+                "Alan Rickman",
+                "Oliver Phelps",
+                "James Phelps"
+            ],
+            "summary": "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past."
+        },
+        {
+            "id": "ee1907c6a4a041cabf65e28331da3069",
+            "title": "Harry Potter and the Deathly Hallows: Part 2",
+            "release_year": 2011,
+            "director": "David Yates",
+            "cast": [
+                "Daniel Radcliffe",
+                "Emma Watson",
+                "Rupert Grint",
+                "Michael Gambon",
+                "Ralph Fiennes",
+                "Alan Rickman",
+                "Evanna Lynch",
+                "Domhnall Gleeson",
+                "Warwick Davis",
+                "Helena Bonham Carter",
+                "Jason Isaacs"
+            ],
+            "summary": "As the battle between the forces of good and evil in the wizarding world escalates, Harry Potter draws ever closer to his final confrontation with Voldemort."
+        },
+        {
+            "id": "0ad89b376e344d1d8004b8a71d87c469",
+            "title": "Harry Potter and the Deathly Hallows: Part 1",
+            "release_year": 2010,
+            "director": "David Yates",
+            "cast": [
+                "Daniel Radcliffe",
+                "Emma Watson",
+                "Rupert Grint",
+                "Bonnie Wright",
+                "Michelle Fairley",
+                "Alan Rickman",
+                "Ralph Fiennes",
+                "Helena Bonham Carter",
+                "Helen McCrory",
+                "Jason Isaacs",
+                "Tom Felton"
+            ],
+            "summary": "Harry Potter is tasked with the dangerous and seemingly impossible task of locating and destroying Voldemort's remaining Horcruxes. Harry must rely on Ron and Hermione more than ever, but dark forces threaten to tear them apart."
         }
     ]
 }
