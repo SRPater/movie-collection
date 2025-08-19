@@ -83,7 +83,7 @@ When you view or interact with a movie, it's displayed in a neat little box like
 └──────────────────────────────────────────────────────────┘
 ```
 
-## 🤝 Contributing
+## 🤝🏻 Contributing
 
 Found a bug or have an idea for improvement?
 Feel free to open an issue or submit a pull request.
